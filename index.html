@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC Buspass Form</title>
+</head>
+
+<body>
+    <center>
+        <h2>GENERAL BUSPASS APPLICATION</h2>
+    </center>
+    <form action="./submit.html">
+        <fieldset>
+            <legend>Applicant Details</legend>
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" maxlength="20">
+            <br>
+            <!-- Father Name -->
+            <label for="fathername"> Father/Gaurdian Name </label>
+            <input type="text" maxlength="12">
+            <br>
+
+            <!--Date of Birth-->
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" id="dateofbirth">
+            <br>
+            <!--Gender-->
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br>
+
+            <!--Age as On -->
+            <label for="age">Age as On</label>
+            <input type="text"  id="age">
+        </fieldset>
+    </form>
+</body>
+
+</html>
