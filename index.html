@@ -11,34 +11,59 @@
     <center>
         <h2>GENERAL BUSPASS APPLICATION</h2>
     </center>
-    <form action="./submit.html">
+    <form action="./submit.html" method="get">
         <fieldset>
-            <legend>Applicant Details</legend>
-            <!-- Name -->
-            <label for="name">Name</label>
-            <input type="text" maxlength="20">
-            <br>
-            <!-- Father Name -->
-            <label for="fathername"> Father/Gaurdian Name </label>
-            <input type="text" maxlength="12">
-            <br>
+            <legend>
+                <h4>Applicant Details</h4>
+            </legend>
+            <!--Name and Father's Name-->
+            <pre>                 <label for="username"><strong>Name</strong></label>          <input type="text" name="username" id="username" required>                                                      <label for="fatherName"><strong>Father's/Gaurdian's name</strong></label> <input type="text" id="fatherName" name="fathername" required></pre>
+            <!--DOB and Gende -->
+            <pre>                 <label for="dob"><strong>Date of Birth</strong></label> <input type="date" name="" id="dob" required>                                                          <label for="gender"><strong>Gender</strong></label>       <input type="radio" name="male"  id="male" value="male" required> <label for="male"><strong>Male</strong></label>   <input type="radio" name="gender" id="female" value="female" required> <label for="gender"> <strong>Female</strong></label></pre>
 
-            <!--Date of Birth-->
-            <label for="dateofbirth">Date of Birth</label>
-            <input type="date" id="dateofbirth">
-            <br>
-            <!--Gender-->
-            <label for="gender">Gender</label>
-            <input type="radio" name="gender" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female">Female</label>
-            <br>
+            <!-- Age and Addhar -->
+            <pre>                 <label for="Age"><strong>Age as on</label></strong></label>     <input type="text" id="Age" required>                                                          <label for="addhar"><strong>Addhar Number</strong></label> <input type="text" name="Addhar Number" id="addhar" required></pre>
 
-            <!--Age as On -->
-            <label for="age">Age as On</label>
-            <input type="text"  id="age">
+            <!-- Mobile Number and Email_id -->
+            <pre>                <label for="mobileNumber"><strong>Mobile Number</strong></label>  <input type="text" name="Mobile Number" id="mobileNumber" required>                                                          <label for="email"><strong>Email</strong></label>         <input type="email" name="Email" id="email" required></pre>
+            <!--Photo-->
+            <pre>                <label for="photo">Photo</label>     <input type="file" accept="image/png, image/jpeg" name="Photo" id="photo" required></pre>
         </fieldset>
+
+        <fieldset>
+            <legend>
+                <h4>Residential Address Details</h4>
+            </legend>
+            <!--Address and District-->
+            <pre>                  <label for="address"><strong>Address</strong></label>        <textarea name="Addess" id="Address" rows="3" cols="35"></textarea>                                                <label for="district"><strong>District</strong></label> <select name="Districts" id="district">  <option value="Karimnagar">Karimnagar</option>   <option value="warangal"> Warangal</option> <option value="Nizamabad">Nizamabad</option> </select> </pre>
+            <!--Mandals and Villages-->
+            <pre>                  <label for="mandal"><strong>Mandal</strong></label>          <select name="Mandal" id="Mandal">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select>                                                                     <label for="village"><strong>Village</strong></label> <select name="village" id="village">  <option value="Madipalli">Madipalli</option>   <option value="Bheempalli">Bheempalli</option> <option value="Kannur">Kannur</option> </select> </pre>
+            <pre>                  <label for="pincode"><strong>Pincode</strong></label>        <input type="text" maxlength="6"></pre>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                <h4>Pass Type Details</h4>
+            </legend>
+            <pre>                  <label for="city"><strong>City</strong></label>          <select name="city" id="city">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select>  </pre>
+            <pre>                  <label for="passtype"><strong>Passtype</strong></label>       <select name="passtype" id="passtype"><option value="Daypass">Daypass</option>   <option value="Monthly">Monthly</option> <option value="Yearly">Yearly</option> </select>  </pre>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h4>Mode of Payment and Pass collection</h4>
+            </legend>
+            <!-- Payment mode -->
+            <pre>                  <label for="payment"><strong>Payment Mode</strong></label>          <select name="Payment" id="payment">  <option value="Cash">Cash</option>   <option value="Card">Debit/Credit card</option> <option value="UPI">UPI</option> </select>  </pre>
+            <!-- delivery mode -->
+            <pre>                  <label for="delivery"><strong>Pass delivery Mode</strong></label>          <select name="delivery type" id="delivery">  <option value="Express">Express</option>   <option value="Normal">Normal </option> </select>  </pre>
+            <!-- Collection Mode -->
+            <pre>                  <label for="collection"><strong>Pass Collection</strong></label>          <select name="city" id="city">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select>  </pre>
+        </fieldset>
+
+        <center> <input type="submit"></center>
     </form>
 </body>
 
