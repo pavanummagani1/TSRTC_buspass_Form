@@ -19,13 +19,13 @@
             <!--Name and Father's Name-->
             <pre>                 <label for="username"><strong>Name</strong></label>          <input type="text" name="username" id="username" required>                                                      <label for="fatherName"><strong>Father's/Gaurdian's name</strong></label> <input type="text" id="fatherName" name="fathername" required></pre>
             <!--DOB and Gende -->
-            <pre>                 <label for="dob"><strong>Date of Birth</strong></label> <input type="date" name="" id="dob" required>                                                          <label for="gender"><strong>Gender</strong></label>       <input type="radio" name="gender"  id="male" value="male" required> <label for="male"><strong>Male</strong></label>   <input type="radio" name="gender" id="female" value="female" required> <label for="gender"> <strong>Female</strong></label></pre>
+            <pre>                 <label for="dob"><strong>Date of Birth</strong></label> <input type="date" name="Date of birth" id="dob" required>                                                          <label for="gender"><strong>Gender</strong></label>       <input type="radio" name="gender"  id="male" value="male" required> <label for="male"><strong>Male</strong></label>   <input type="radio" name="gender" id="female" value="female" required> <label for="gender"> <strong>Female</strong></label></pre>
 
             <!-- Age and Addhar -->
-            <pre>                 <label for="Age"><strong>Age as on</label></strong></label>     <input type="text" id="Age" required>                                                          <label for="addhar"><strong>Addhar Number</strong></label> <input type="text" name="Addhar Number" id="addhar" required></pre>
+            <pre>                 <label for="Age"><strong>Age as on</label></strong></label>     <input type="tel" id="Age" maxlength="2" required>                                                          <label for="addhar"><strong>Addhar Number</strong></label> <input type="tel" maxlength="12" name="Addhar Number" id="addhar" required></pre>
 
             <!-- Mobile Number and Email_id -->
-            <pre>                <label for="mobileNumber"><strong>Mobile Number</strong></label>  <input type="text" name="Mobile Number" id="mobileNumber" required>                                                          <label for="email"><strong>Email</strong></label>         <input type="email" name="Email" id="email" required></pre>
+            <pre>                <label for="mobileNumber"><strong>Mobile Number</strong></label>  <input type="tel" name="Mobile Number" id="mobileNumber" maxlength="10" required>                                                          <label for="email"><strong>Email</strong></label>         <input type="email" name="Email" id="email" required></pre>
             <!--Photo-->
             <pre>                <label for="photo">Photo</label>     <input type="file" accept="image/png, image/jpeg" name="Photo" id="photo" required></pre>
         </fieldset>
@@ -37,7 +37,8 @@
             <!--Address and District-->
             <pre>                  <label for="address"><strong>Address</strong></label>        <textarea name="Addess" id="Address" rows="3" cols="35"></textarea>                                                <label for="district"><strong>District</strong></label> <select name="Districts" id="district">  <option value="Karimnagar">Karimnagar</option>   <option value="warangal"> Warangal</option> <option value="Nizamabad">Nizamabad</option> </select> </pre>
             <!--Mandals and Villages-->
-            <pre>                  <label for="mandal"><strong>Mandal</strong></label>          <select name="Mandal" id="Mandal">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select>                                                                     <label for="village"><strong>Village</strong></label> <select name="village" id="village">  <option value="Madipalli">Madipalli</option>   <option value="Bheempalli">Bheempalli</option> <option value="Kannur">Kannur</option> </select> </pre>
+            <pre>                  <label for="mandal"><strong>Mandal</strong></label>          <select name="Mandal" id="Mandal">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select> 
+             <!--Pincode-->
             <pre>                  <label for="pincode"><strong>Pincode</strong></label>        <input type="text" maxlength="6"></pre>
         </fieldset>
 
@@ -46,7 +47,9 @@
             <legend>
                 <h4>Pass Type Details</h4>
             </legend>
+            <!--City-->
             <pre>                  <label for="city"><strong>City</strong></label>          <select name="city" id="city">  <option value="Jammikunta">Jammikunta</option>   <option value="Kamalapur">Kamalapur</option> <option value="Huzurabad">Huzurabad</option> </select>  </pre>
+            <!--Passtype-->
             <pre>                  <label for="passtype"><strong>Passtype</strong></label>       <select name="passtype" id="passtype"><option value="Daypass">Daypass</option>   <option value="Monthly">Monthly</option> <option value="Yearly">Yearly</option> </select>  </pre>
 
         </fieldset>
